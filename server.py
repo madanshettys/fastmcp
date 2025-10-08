@@ -21,7 +21,7 @@ verifier = JWTVerifier(
 )
 
 # Create the FASTMCP
-mcp = FastMCP("Simple Math MCP Server")
+mcp = FastMCP("Simple Math MCP Server",auth=verifier )
 
 @mcp.tool(annotations={
     "a": {
